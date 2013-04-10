@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+        <title>{% block title %}Aki La Machine | Site Officiel.{% endblock %}</title>
+        {% block stylesheets %}
+            {% stylesheets '%kernel.root_dir%/../vendor/twitter/bootstrap/less/bootstrap.less'
+                           '%kernel.root_dir%/../vendor/twitter/bootstrap/less/responsive.less'
+                           '%kernel.root_dir%/../src/Aki/MainBundle/Resources/public/css/sticky-footer.css'
+                            %}
+        <link rel="stylesheet" href="{{ asset_url }}" media="screen" />
+            {% endstylesheets %}
+        {% endblock %}     
+    </head>
+
+        {% block header%}
+            {% include 'MainBundle:Config:header.html.twig' %}
+        {% endblock %}
+                        
+                     <div class="container">      
+                          {% block body %}{% endblock %}
+                     </div>
+                     <div id="push"></div>
+                     </div>
+
+        {% block footer %}
+            {% include 'MainBundle:Config:footer.html.twig' %}
+        {% endblock %}
+
+        {% block javascripts %}
+            {% javascripts  '%kernel.root_dir%/../src/aki/MainBundle/Resources/public/js/jquery-1.9.1.js' %}
+                        <script src="{{ asset_url }}" type="text/javascript"></script>
+            {% endjavascripts %}
+            {% javascripts  '%kernel.root_dir%/../vendor/twitter/bootstrap/docs/assets/js/bootstrap.js' 
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-transition.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-alert.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-button.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-carousel.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-collapse.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-dropdown.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-modal.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-tooltip.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-popover.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-scrollspy.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-tab.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-typeahead.js'
+                            '%kernel.root_dir%/../vendor/twitter/bootstrap/js/bootstrap-affix.js'
+                             %}
+                        <script src="{{ asset_url }}" type="text/javascript"></script>
+            {% endjavascripts %}     
+        {% endblock %}
+        </body>
+    </html>

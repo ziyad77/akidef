@@ -1,0 +1,61 @@
+{% extends "::base.html.twig" %}
+
+{% form_theme form _self %}
+
+
+{% block body %}
+
+<div class="container">
+    <div class="content">
+        
+        <div class="row">
+            
+            <div class="hero-unit">
+                <h1>Restons en contact !</h1>
+                <p class="tagline">
+                    Merci d'avoir visité notre site web. Si vous voulez contacter notre équipe n'hésitez pas à remplir le formulaire si dessous.
+                </p>  
+            </div><!--end hero unit -->
+            
+            <section class="span6">
+                <form action="{{ path("urbanet_main_contact") }}" method="POST">
+                    <div class="control-group">
+                        {{ form_row(form.Nom) }}
+                        {{ form_row(form.Prenom) }}
+                    </div>
+                    <div class="control-group">
+                        {{ form_row(form.Email) }}   
+                    </div>
+                    <div class="control-group">
+                        {{ form_row(form.Objet) }}   
+                    </div>
+                    <div class="input-xxlarge control-group">
+                        {{ form_row(form.Message) }}
+                    </div>
+                    
+                    {{ form_row(form._token) }}
+                    <div class="control-group">
+                        <div class="controls">
+                            <button type="submit" class="btn btn-success"> Envoyer </button>
+                        </div>
+                    </div>
+                </form>
+                <br class="clear">
+            </section><!-- end left -->
+
+            <section class="span6">
+                <div class="well">
+                    <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                            src="https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=new+york+city&aq=&sll=37.6,-95.665&sspn=80.867771,100.263672&t=m&ie=UTF8&hq=&hnear=Fontainebleau&z=11&iwloc=A&output=embed">
+                    </iframe>
+                </div><!--end well -->
+            </section><!--end right -->
+            
+      </div><!--end row -->
+
+      <hr>
+      
+    </div>
+</div>
+
+{% endblock %}

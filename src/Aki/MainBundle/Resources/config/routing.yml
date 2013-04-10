@@ -1,0 +1,32 @@
+homepage:
+    pattern:  /home
+    defaults: { _controller: MainBundle:Default:index }
+
+Discographie:
+    pattern:  /Recherche
+    defaults: { _controller: MainBundle:Default:recherche }
+
+Biographie:
+    pattern:  /Biographie
+    defaults: { _controller: MainBundle:Default:index }
+
+apropos:
+    pattern:  /Compagnie/A-Propos
+    defaults: { _controller: MainBundle:Compagnie:apropos }
+
+suggestion:
+    pattern:  /Compagnie/suggestion
+    defaults: { _controller: MainBundle:Compagnie:suggestion }
+    
+contact:
+    pattern:  /Compagnie/contact
+    defaults: { _controller: MainBundle:Compagnie:contact }
+
+Videos:
+    pattern:  /home
+    defaults: { _controller: MainBundle:Default:index }
+    
+Photos:
+    pattern:  /home
+    defaults: { _controller: MainBundle:Default:index }
+    

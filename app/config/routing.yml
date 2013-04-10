@@ -1,0 +1,11 @@
+main:
+    resource: "@MainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+discographie:
+    resource: "@DiscographieBundle/Resources/config/routing.yml"
+    prefix:   /Discographie
+
+biographie:
+    resource: "@DiscographieBundle/Resources/config/routing.yml"
+    prefix:   /Biographie

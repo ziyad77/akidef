@@ -1,0 +1,7 @@
+parameters:
+#    discographie.example.class: Aki\DiscographieBundle\Example
+
+services:
+#    discographie.example:
+#        class: %discographie.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

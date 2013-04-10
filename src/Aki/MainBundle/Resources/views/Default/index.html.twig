@@ -1,0 +1,92 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="../assets/img/examples/slide-01.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Article 1</h1>
+              <p class="lead">Je suis l'article 1.</p>
+              <a class="btn btn-large btn-primary" href="#">voir l'article</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/img/examples/slide-02.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Article 2.</h1>
+              <p class="lead">Je suis l'article 2.</p>
+              <a class="btn btn-large btn-primary" href="#">voir l'article</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../assets/img/examples/slide-03.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Article 3.</h1>
+              <p class="lead">Je suis l'article 3.</p>
+              <a class="btn btn-large btn-primary" href="#">voir l'article</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+    <!--<div class="container">
+        <div class="row-fluid">
+            <div class="container">
+                <legend>Accueil</legend>
+            <div class="span3">
+                <legend> Dernières Actus </legend>
+            </div>
+            <div class="span3 offset9">
+                <legend>Dernières vidéos</legend>
+            </div>
+            </div>
+       </div>
+
+    {#
+    <div class="connection">
+        <form action="{{ path("sonata_user_admin_security_check") }}" method="post">
+
+
+
+            <div class="control-group">
+                <label for="username">{{ 'security.login.username'|trans({}, 'FOSUserBundle') }}</label>
+
+                <div class="controls">
+                    <input type="text" id="username" name="_username" value="" class="big sonata-medium"/>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="password">{{ 'security.login.password'|trans({}, 'FOSUserBundle') }}</label>
+
+                <div class="controls">
+                    <input type="password" id="password" name="_password" class="big sonata-medium" />
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label for="remember_me">
+                    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                    {{ 'security.login.remember_me'|trans({}, 'FOSUserBundle') }}
+                </label>
+            </div>
+
+            <div class="form-actions">
+                <input type="submit" class="btn btn-primary" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}" />
+            </div>
+        </form>
+    </div>
+    #}
+</div>
+
+{% endblock %}

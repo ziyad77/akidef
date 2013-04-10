@@ -1,0 +1,39 @@
+<TABLE BORDER="0" background="http://xn--80aqafcrtq.cc/img/4/8/8/%D0%A2%D0%B5%D0%BA%D1%81%D1%82%D1%83%D1%80%D0%B0,%20%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D1%84%D0%BE%D0%BD,%20%D0%B1%D0%B5%D0%BB%D1%8B%D0%B5%20%D0%BF%D0%BE%D0%BB%D0%BE%D1%81%D1%8B,%20%D0%B0%D1%81%D1%84%D0%B0%D0%BB%D1%8C%D1%82,%20%D0%B4%D0%BE%D1%80%D0%BE%D0%B3%D0%B0,%201920x1200.jpg" WIDTH=100%> 
+    <TR>
+        <TD>
+            <p align="center">{% image '%kernel.root_dir%/../src/Aki/MainBundle/Resources/public/images/entete.png' %}
+                <img src="{{ asset_url }}" alt="aki entete" />
+                              {% endimage %}
+            </p>
+        </TD>
+    </TR>
+</TABLE>
+<div class="navbar"> 
+    <div class="navbar navbar-inverse">
+        <div class="navbar-inner">
+            <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+
+            <a class="brand" href="{{ path('homepage') }}">
+                    {% image '%kernel.root_dir%/../src/Aki/MainBundle/Resources/public/images/logo.png' %}
+                    <img src="{{ asset_url }}" alt="Urbanetwork logo" class="img-circle" />
+                </a>  
+                    {% endimage %}
+
+                <div class="nav-collapse navbar-responsive-collapse collapse" />
+                <ul class="nav pull-left">
+                    <li class="active">
+                        <a href="{{ path('homepage') }}">Accueil</a>
+                    </li>
+                    <li><a href="{{ path('Biographie') }}">Biographie</a></li>
+                    <li><a href="{{ path('Discographie') }}">Discographie</a></li>
+                    <li><a href="{{ path('Videos') }}">Vidéos</a></li>
+                    <li><a href="{{ path('Photos') }}">photos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>      
+</div>
