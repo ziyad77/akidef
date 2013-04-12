@@ -1,0 +1,3 @@
+biographie:
+    pattern:  /Biographie
+    defaults: { _controller: BiographieBundle:Default:Biographie }

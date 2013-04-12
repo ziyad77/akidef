@@ -3,12 +3,12 @@ homepage:
     defaults: { _controller: MainBundle:Default:index }
 
 Discographie:
-    pattern:  /Recherche
-    defaults: { _controller: MainBundle:Default:recherche }
+    pattern:  /Discographie
+    defaults: { _controller: DiscographieBundle:Default:Discographie }
 
 Biographie:
     pattern:  /Biographie
-    defaults: { _controller: MainBundle:Default:index }
+    defaults: { _controller: BiographieBundle:Default:Biographie }
 
 apropos:
     pattern:  /Compagnie/A-Propos
@@ -23,10 +23,10 @@ contact:
     defaults: { _controller: MainBundle:Compagnie:contact }
 
 Videos:
-    pattern:  /home
-    defaults: { _controller: MainBundle:Default:index }
+    pattern:  /Videos
+    defaults: { _controller: VideosBundle:Default:Video }
     
 Photos:
-    pattern:  /home
-    defaults: { _controller: MainBundle:Default:index }
+    pattern:  /Photos
+    defaults: { _controller: PhotoBundle:Default:Photo }
     

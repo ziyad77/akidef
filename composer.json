@@ -21,7 +21,7 @@
  
         "kriswallsmith/assetic": "1.1.*@dev",
         "sonata-project/jquery-bundle": "1.8.*",
-	"twitter/bootstrap": "dev-master",
+	"twitter/bootstrap": "2.3.*",
 	"leafo/lessphp": "dev-master"
     },
     "scripts": {

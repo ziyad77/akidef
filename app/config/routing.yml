@@ -1,3 +1,15 @@
+video:
+    resource: "@VideoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+photo:
+    resource: "@PhotoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+biographie:
+    resource: "@BiographieBundle/Resources/config/routing.yml"
+    prefix:   /
+
 main:
     resource: "@MainBundle/Resources/config/routing.yml"
     prefix:   /
@@ -5,7 +17,3 @@ main:
 discographie:
     resource: "@DiscographieBundle/Resources/config/routing.yml"
     prefix:   /Discographie
-
-biographie:
-    resource: "@DiscographieBundle/Resources/config/routing.yml"
-    prefix:   /Biographie

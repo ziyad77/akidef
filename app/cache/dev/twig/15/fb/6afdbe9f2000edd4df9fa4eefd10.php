@@ -102,7 +102,7 @@ class __TwigTemplate_15fb6afdbe9f2000edd4df9fa4eefd10 extends Twig_Template
                     <li><a href=\"";
         // line 34
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("Photos"), "html", null, true);
-        echo "\">photos</a></li>
+        echo "\">Photos</a></li>
                 </ul>
             </div>
         </div>
@@ -123,6 +123,6 @@ class __TwigTemplate_15fb6afdbe9f2000edd4df9fa4eefd10 extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  104 => 34,  100 => 33,  96 => 32,  92 => 31,  87 => 29,  81 => 25,  65 => 22,  61 => 21,  57 => 20,  42 => 7,  24 => 4,  19 => 1,  265 => 56,  173 => 55,  168 => 40,  154 => 38,  149 => 37,  146 => 36,  142 => 34,  139 => 33,  136 => 32,  131 => 27,  127 => 24,  124 => 23,  121 => 22,  117 => 13,  91 => 11,  86 => 7,  83 => 6,  77 => 5,  69 => 58,  67 => 36,  64 => 35,  62 => 32,  56 => 28,  54 => 27,  50 => 25,  48 => 22,  37 => 13,  35 => 6,  25 => 1,  84 => 90,  31 => 5,  28 => 5,);
+        return array (  104 => 34,  100 => 33,  96 => 32,  92 => 31,  87 => 29,  81 => 25,  65 => 22,  61 => 21,  57 => 20,  42 => 7,  28 => 5,  24 => 4,  19 => 1,);
     }
 }

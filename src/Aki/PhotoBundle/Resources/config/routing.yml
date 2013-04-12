@@ -1,0 +1,3 @@
+photos:
+    pattern:  /Photos
+    defaults: { _controller: PhotoBundle:Default:Photos }

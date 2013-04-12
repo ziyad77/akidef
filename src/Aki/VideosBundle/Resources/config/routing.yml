@@ -1,0 +1,3 @@
+video:
+    pattern:  /Videos
+    defaults: { _controller: VideoBundle:Default:Videos }

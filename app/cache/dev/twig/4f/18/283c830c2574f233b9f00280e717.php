@@ -29,7 +29,7 @@ class __TwigTemplate_4f18283c830c2574f233b9f00280e717 extends Twig_Template
     {
         // line 4
         echo "
-    <div id=\"myCarousel\" class=\"carousel slide\">
+    <!--<div id=\"myCarousel\" class=\"carousel slide\">
       <div class=\"carousel-inner\">
         <div class=\"item active\">
           <img src=\"../assets/img/examples/slide-01.jpg\" alt=\"\">
@@ -64,9 +64,9 @@ class __TwigTemplate_4f18283c830c2574f233b9f00280e717 extends Twig_Template
       </div>
       <a class=\"left carousel-control\" href=\"#myCarousel\" data-slide=\"prev\">&lsaquo;</a>
       <a class=\"right carousel-control\" href=\"#myCarousel\" data-slide=\"next\">&rsaquo;</a>
-    </div><!-- /.carousel -->
+    </div><!-- /.carousel --> 
 
-    <!--<div class=\"container\">
+    <div class=\"container\">
         <div class=\"row-fluid\">
             <div class=\"container\">
                 <legend>Accueil</legend>

@@ -21,6 +21,9 @@ class AppKernel extends Kernel
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Aki\DiscographieBundle\DiscographieBundle(),
             new Aki\MainBundle\MainBundle(),
+            new Aki\BiographieBundle\BiographieBundle(),
+            new Aki\PhotoBundle\PhotoBundle(),
+            new Aki\VideosBundle\VideoBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
