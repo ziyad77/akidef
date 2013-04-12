@@ -2,6 +2,12 @@
 ## Eclipse
 #################
 
+#netbeans
+/nbproject/*
+
+# Personnal parameters, Edit parameters.yml.dist instead
+app/config/parameters.yml
+
 *.pydevproject
 .project
 .metadata
@@ -168,9 +174,3 @@ vendor/*
 */cache/*
 web/uploads/*
 web/bundles/*
-
-#netbeans
-/nbproject/*
-
-# Personnal parameters, Edit parameters.yml.dist instead
-app/config/parameters.yml
